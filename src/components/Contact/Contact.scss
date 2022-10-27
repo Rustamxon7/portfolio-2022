@@ -1,0 +1,65 @@
+.contact-section {
+  margin-bottom: 10rem;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+
+.form {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  label {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+
+  input,
+  textarea {
+    font-family: inherit;
+    font-size: 2rem;
+    color: #999;
+    background-color: #1b1b1b;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    color: #ccc;
+    box-shadow: 0 0 1px 1px rgba(248, 191, 76, 0.8);
+  }
+}
+
+// test button
+.button {
+  font-family: inherit;
+  display: inline-block;
+  border: none;
+  background-color: #f8bf4c;
+  border-radius: 50px;
+  padding: 2rem 3.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  align-self: flex-start;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #dfac44;
+    transition: 0.3s;
+  }
+}
+

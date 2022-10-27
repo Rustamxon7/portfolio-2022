@@ -1,0 +1,15 @@
+.section-about {
+  margin-bottom: 10rem;
+  overflow: hidden;
+}
+
+.about {
+  height: 100vh;
+
+  &-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    margin-bottom: 10rem;
+  }
+}

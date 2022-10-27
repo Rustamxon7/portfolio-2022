@@ -1,0 +1,79 @@
+.accordion {
+  padding: 4rem 0;
+  border-bottom: 1px solid #4a4a4a;
+
+  &:first-child {
+    border-top: 1px solid #4a4a4a;
+  }
+
+  &:hover .accordion-icon img {
+    opacity: 1;
+  }
+
+  &:hover .accordion-title {
+    color: #fff;
+  }
+
+  &-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    // border-bottom: 1px solid #4a4a4a;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  &-num {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plat Nomor', sans-serif;
+    font-size: 2rem;
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+  }
+
+  &-title {
+    color: #ccc;
+    font-size: 3.2rem;
+  }
+
+  &-icon {
+    margin-left: auto;
+    transition: transform 0.3s ease-in-out;
+
+    img {
+      width: 6rem;
+      height: 6rem;
+      opacity: 0.85;
+    }
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.6s;
+
+    p {
+      color: #e0e0e0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      line-height: 1.5;
+      padding: 3rem 2rem 1rem 0;
+    }
+  }
+}
+
+.active {
+  .accordion-icon {
+    transform: rotate(-180deg);
+  }
+
+  .accordion-content {
+    max-height: 20rem;
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Syne';
+  src: url(./assets/syne.bold.otf);
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  color: #fff;
+  background-color: #0a0a0a;
+  animation: noise 0.1s infinite;
+  //cursor: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: #f8bf4c;
+  color: #0a0a0a;
+}

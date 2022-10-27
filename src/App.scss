@@ -1,0 +1,41 @@
+.highlight {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: url(./assets/gold2.jpg);
+  background-size: cover;
+  text-shadow: 0 0 10px #f8bf4c, 0 0 40px #f8bf4c, 0 0 80px #f8bf4c;
+}
+
+.underline,
+.underline:link,
+.underline:visited {
+  text-decoration: none;
+  border-bottom: 3px solid #f8bf4c;
+  color: inherit;
+  margin-left: 6px;
+}
+
+// loading animation
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #222222;
+  height: 100vh;
+  width: 25vw;
+  z-index: 1000;
+  // border-right: 1px solid #ffffff;
+}
+
+.second {
+  left: 25%;
+}
+
+.third {
+  left: 50%;
+}
+
+.fourth {
+  left: 75%;
+}

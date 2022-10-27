@@ -1,0 +1,29 @@
+.marquee {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 200%;
+  transform: translateX(-200px);
+
+  &-item {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+
+    &__dot {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #f8bf4c;
+      animation: dot 1s infinite;
+    }
+  }
+}

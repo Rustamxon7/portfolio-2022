@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 2px solid #fff;
+  width: 100vw;
+  padding: 4rem 6rem;
+
+  font-size: 1.6rem;
+
+  &-logo {
+    height: 3.6rem;
+  }
+
+  &-text {
+    font-family: 'Roboto', sans-serif;
+    color: #aaa;
+  }
+
+  &-icons {
+    display: flex;
+    gap: 1.6rem
+  }
+
+  &-icon {
+    font-size: 5rem;
+    color: #fff;
+    border: 2px solid #00000000;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #f8bf4c;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+}

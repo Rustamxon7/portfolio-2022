@@ -1,0 +1,20 @@
+.heading {
+  width: 100%;
+
+  margin-bottom: 8.4rem;
+
+  &-title {
+    font-size: 4.4rem;
+    padding-bottom: 2.8rem;
+  }
+
+  &-line {
+    height: 2px;
+
+    &__in {
+      background-color: #fff;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

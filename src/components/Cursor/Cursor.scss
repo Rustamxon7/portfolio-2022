@@ -1,0 +1,103 @@
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.cursor-inner {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.c-none {
+  height: 0;
+  width: 0;
+  border: 0;
+}
+
+.c-none ~ .cursor-inner {
+  display: none;
+}
+
+.c-project {
+  color: #0a0a0a;
+  background-color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+  border: none;
+  transition: height 0.2s, width 0.2s;
+  background-image: url(../../assets/gold2.jpg);
+  background-size: cover;
+}
+
+.c-project ~ .cursor-inner {
+  display: none;
+}
+
+.c-acc {
+  border: none;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(3);
+  background-size: cover;
+  opacity: 0.5;
+  transition: transform 0.3s;
+}
+
+.c-mar {
+  border: none;
+  mix-blend-mode: difference;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(3);
+  background-size: cover;
+  transition: transform 0.3s;
+}
+
+.html {
+  background-color: #e34c26;
+}
+
+.css {
+  background-color: #264de4;
+}
+.sass {
+  background-color: #c76494;
+}
+
+.javascript {
+  background-color: #f7df1e;
+}
+
+.react {
+  background-color: #61dafb;
+}
+
+.node {
+  background-color: #3c873a;
+}
+
+.express {
+  background-color: #c07a1e;
+}
+
+.mongodb {
+  background-color: #47a248;
+}
+
+.mongoose {
+  background-color: #bb1b28;
+}
