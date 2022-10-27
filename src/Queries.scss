@@ -71,3 +71,43 @@
     grid-template-columns: 1fr !important;
   }
 }
+
+/*
+BELOW 544px (Phones)
+*/
+
+@media (max-width: 34em) {
+  .hero-title {
+    font-size: 4rem !important;
+    padding: 2rem 2rem !important;
+  }
+
+  .nav-list li {
+    font-size: 4rem !important;
+  }
+
+  .portfolio-project {
+    padding: 0 2rem !important;
+  }
+
+  .heading-title {
+    padding: 0 2rem !important;
+  }
+
+  .portfolio-project__content::before {
+    font-size: 15rem !important;
+  }
+
+  .portfolio-project h2 {
+    font-size: 3rem !important;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr !important;
+    padding: 0 2rem !important;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr !important;
+  }
+}
