@@ -1,17 +1,17 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import gsap from 'gsap';
 
-import logo from './logo.svg';
 import './App.scss';
 import './Queries.scss';
 import Hero from './components/Hero/Hero';
 import Cursor from './components/Cursor/Cursor';
-import Portfolio from './components/Portfolio/Portfolio';
 import Container from './components/UI/Container';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
+
+const Portfolio = React.lazy(() => import('./components/Portfolio/Portfolio'));
 
 function App() {
   useEffect(() => {
@@ -91,7 +91,7 @@ function App() {
   }, []);
 
   return (
-    <div className='App'>
+    <div className="App">
       <Nav />
       <Hero />
       <Container>
@@ -107,10 +107,10 @@ function App() {
       <Cursor />
 
       {/* animation overlay */}
-      <div className='overlay first'></div>
-      <div className='overlay second'></div>
-      <div className='overlay third'></div>
-      <div className='overlay fourth'></div>
+      <div className="overlay first"></div>
+      <div className="overlay second"></div>
+      <div className="overlay third"></div>
+      <div className="overlay fourth"></div>
     </div>
   );
 }
