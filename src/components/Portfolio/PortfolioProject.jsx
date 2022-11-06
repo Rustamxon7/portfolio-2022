@@ -115,7 +115,7 @@ const PortfolioProject = (props) => {
 
   return (
     <div className="portfolio-project">
-      <a href={props.link} className="portfolio-project__img" ref={imgRef}>
+      <a href={props.link} className="portfolio-project__img" ref={imgRef} target="_blank" rel="noreferrer">
         <img ref={imgInRef} src={props.img} alt="Project" />
       </a>
 

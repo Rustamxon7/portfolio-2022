@@ -5,7 +5,6 @@ import PortfolioProject from './PortfolioProject';
 
 import personalBudget from '../../assets/personal_budget.png';
 import personalBudget2 from '../../assets/vets.png';
-import personalBudget3 from '../../assets/personal_budget_3.png';
 import budgetApp from '../../assets/Sunnyside-agency.png';
 import budgetApp2 from '../../assets/instagramHD.png';
 
