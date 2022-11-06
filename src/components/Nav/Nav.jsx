@@ -2,11 +2,14 @@ import logo from '../../assets/logo.svg';
 import './Nav.scss';
 import { useEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
-// import NavLinks from react-router-dom
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+
+  const closeMenu = () => {
+    setOpen(false);
+  };
 
   const shapeRef1 = useRef();
   const shapeRef2 = useRef();
@@ -100,7 +103,15 @@ const Nav = () => {
   return (
     <>
       <div className="nav">
-        <img className="nav__logo" src={logo} alt="logo" />
+        <Link
+          href="#about"
+          to="about"
+          smooth={true}
+          duration={1000}
+          onClick={closeMenu}
+        >
+          <img className="nav__logo" src={logo} alt="logo" />
+        </Link>
 
         <p className="nav-btn">
           {open ? (

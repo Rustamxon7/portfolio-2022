@@ -9,7 +9,7 @@ const Marquee = () => {
     'HTML',
     'CSS',
     'SASS',
-    'JavaScript',
+    'JS',
     'React',
     'Redux',
     'Ruby',
