@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.scss';
 import './Queries.scss';
@@ -10,6 +11,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
+import Instagram from './components/Pages/Instagram';
 
 const Portfolio = React.lazy(() => import('./components/Portfolio/Portfolio'));
 
@@ -92,19 +94,46 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
-      <Hero />
-      <Container>
-        <Portfolio />
-      </Container>
-      <Container>
-        <About />
-      </Container>
-      <Container>
-        <Contact />
-      </Container>
-      <Footer />
-      <Cursor />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Nav />
+                <Hero />
+                <Container>
+                  <Portfolio />
+                </Container>
+                <Container>
+                  <About />
+                </Container>
+                <Container>
+                  <Contact />
+                </Container>
+                <Footer />
+                <Cursor />
+              </>
+            }
+          ></Route>
+
+          <Route
+            exact
+            path="/project/:id"
+            element={
+              <>
+                <Nav />
+                {/* <Hero /> */}
+                <Container>
+                  <Instagram />
+                </Container>
+                <Footer />
+                <Cursor />
+              </>
+            }
+          ></Route>
+        </Routes>
+      </BrowserRouter>
 
       {/* animation overlay */}
       <div className="overlay first"></div>

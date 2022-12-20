@@ -21,7 +21,8 @@ const Contact = () => {
           </P>
           <br />
           <P>
-            If contact forms aren't your thing... send me an email at
+            If contact forms aren't your thing... send me an email at 
+            <br/>
             <a
               href="mailto:rustamxontolipov788@gmail.com"
               className="underline"

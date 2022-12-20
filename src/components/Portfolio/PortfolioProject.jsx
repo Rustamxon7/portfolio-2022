@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { NavLink } from 'react-router-dom';
 
 import './PortfolioProject.scss';
 gsap.registerPlugin(ScrollTrigger);
@@ -115,9 +116,14 @@ const PortfolioProject = (props) => {
 
   return (
     <div className="portfolio-project">
-      <a href={props.link} className="portfolio-project__img" ref={imgRef} target="_blank" rel="noreferrer">
+      <NavLink
+        to={`/project/:id`}
+        className="portfolio-project__img"
+        ref={imgRef}
+        rel="noreferrer"
+      >
         <img ref={imgInRef} src={props.img} alt="Project" />
-      </a>
+      </NavLink>
 
       <div className="portfolio-project__content">
         <h2 ref={titleRef}>{props.title}</h2>

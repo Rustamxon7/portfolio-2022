@@ -79,6 +79,10 @@ BELOW 544px (Phones)
 @media (max-width: 34em) {
   .hero-title {
     font-size: 4rem !important;
+    margin-bottom: 2rem !important;
+  }
+
+  .nav {
     padding: 2rem 2rem !important;
   }
 
@@ -86,8 +90,8 @@ BELOW 544px (Phones)
     font-size: 4rem !important;
   }
 
-  .portfolio-project {
-    padding: 0 2rem !important;
+  .hero-img {
+    width: 80% !important;
   }
 
   .heading-title {
@@ -98,16 +102,47 @@ BELOW 544px (Phones)
     font-size: 15rem !important;
   }
 
+  .portfolio-project__img {
+    height: 100% !important;
+  }
+
   .portfolio-project h2 {
     font-size: 3rem !important;
   }
 
   .about-content {
     grid-template-columns: 1fr !important;
-    padding: 0 2rem !important;
   }
 
   .contact-content {
     grid-template-columns: 1fr !important;
+  }
+
+  .pg-heading-primary {
+    font-size: 3.2rem !important;
+  }
+
+  .p {
+    font-size: 2rem !important;
+  }
+
+  .underline {
+    font-size: 2rem;
+  }
+
+  .footer {
+    padding: 2rem 2rem !important;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-icons {
+    gap: 0 !important;
+  }
+
+  .pg-btn {
+    font-size: 1.2rem !important;
   }
 }
