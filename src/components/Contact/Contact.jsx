@@ -42,7 +42,7 @@ const Contact = () => {
                 type='text'
                 id='name'
                 name='name'
-                placeholder='Kevin De Bruyne'
+                placeholder='Karim Benzema'
               />
             </div>
             <div>

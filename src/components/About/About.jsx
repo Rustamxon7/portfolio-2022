@@ -10,33 +10,33 @@ const accordionData = [
     id: 1,
     title: 'Frontend',
     content:
-      'Hands-on experience in building responsive Web Applications for more than 2+ years.  HTML & CSS, SCSS, JavaScript, React & Redux, React Three Fiber',
+      'I have over two years of experience in developing responsive web applications. I am proficient in HTML & CSS, SCSS, JavaScript, React & Redux, Three Js, React Three Fiber',
   },
   {
     id: 2,
     title: 'Backend',
     content:
-      'Experience in 1+ years of database designing, and building reliable APIs. MySQL, PostgreSQL, Ruby, Ruby on Rails, Node.js, Rest API, Rspec, Swagger UI',
+      'I possess over one year of experience in database design and development, as well as creating dependable application programming interfaces (APIs). My expertise includes MySQL, PostgreSQL, Ruby, Ruby on Rails, Node.js, Rest API, Rspec, Swagger UI and Git.',
   },
   {
     id: 3,
     title: 'Design',
     content:
-      'I have skills to create UX & UI design for Web applications on Figma. Love for 3D modeling and creating satisfying videos on Blender',
+      'I have a keen interest in developing user interfaces and user experiences on Figma, as well as creating 3D models and satisfying visual content on Blender. I enjoy the challenge of combining aesthetics and function to create results which exceed expectations.',
   },
 ];
 
 const About = () => {
   return (
-    <div className="section-about" id="about">
+    <div className='section-about' id='about'>
       <Heading>About Me</Heading>
-      <div className="about-content">
-        <div className="about-text">
+      <div className='about-content'>
+        <div className='about-text'>
           <P>
-            I'm a passionate Full-Stack Web developer with a love for learning
-            languages. Mentor of 4+ students who what's to be web developers in
-            the future. Actively job seeker who searching to find his position
-            in a growing team.
+            I am an enthusiastic Full-Stack Web Developer passionate about
+            learning languages. Mentoring four or more students who are aspiring
+            to become web developers in the future, I am actively seeking
+            employment to join a flourishing team.
           </P>
         </div>
 
