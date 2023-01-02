@@ -21,7 +21,7 @@ const Footer = () => {
         <a href="https://github.com/Rustamxon7" target="_blank" rel="noreferrer">
           <IoLogoGithub className="footer-icon" />
         </a>
-        <a href="www.linkedin.com/in/rustam-tolipov" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/rustam-tolipov" target="_blank" rel="noreferrer">
           <IoLogoLinkedin className="footer-icon" />
         </a>
         <a href="https://join.skype.com/invite/EocMg9sn1jjC" target="_blank" rel="noreferrer">
