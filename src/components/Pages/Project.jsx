@@ -12,7 +12,7 @@ const Project = () => {
 
   useEffect(() => {
     axios
-      .get(`https://projects-api.fly.dev/api/v1/projects/1`)
+      .get(`https://projects-api.fly.dev/api/v1/projects/${id}`)
       .then((res) => {
         setProject(res.data);
         setIsLoading(false);

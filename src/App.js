@@ -4,16 +4,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.scss';
 import './Queries.scss';
+import Cursor from './components/Cursor/Cursor';
+import Container from './components/UI/Container';
+import About from './components/About/About';
+import Footer from './components/Footer/Footer';
+import Nav from './components/Nav/Nav';
+import Project from './components/Pages/Project';
 
 const Portfolio = React.lazy(() => import('./components/Portfolio/Portfolio'));
 const Hero = React.lazy(() => import('./components/Hero/Hero'));
-const About = React.lazy(() => import('./components/About/About'));
 const Contact = React.lazy(() => import('./components/Contact/Contact'));
-const Footer = React.lazy(() => import('./components/Footer/Footer'));
-const Nav = React.lazy(() => import('./components/Nav/Nav'));
-const Project = React.lazy(() => import('./components/Pages/Project'));
-const Cursor = React.lazy(() => import('./components/Cursor/Cursor'));
-const Container = React.lazy(() => import('./components/UI/Container'));
 
 function App() {
   useEffect(() => {
@@ -56,8 +56,6 @@ function App() {
     tl.to('.overlay', {
       border: '0px solid black',
     });
-
-    console.log(buttons);
 
     buttons.forEach((button) => {
       button.addEventListener('mouseover', () =>
