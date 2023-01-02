@@ -14,6 +14,8 @@ const PortfolioProject = (props) => {
   const numRef = useRef(null);
   const desRef = useRef(null);
 
+  const img = props.img ? props.img : props.thumbImg;
+
   useEffect(() => {
     if (imgRef === null) return;
     const cursor = document.querySelector('.cursor');
@@ -115,17 +117,17 @@ const PortfolioProject = (props) => {
   }, []);
 
   return (
-    <div className="portfolio-project">
+    <div className='portfolio-project'>
       <NavLink
-        to={`/project/:id`}
-        className="portfolio-project__img"
+        to={`/project/${props.id}`}
+        className='portfolio-project__img'
         ref={imgRef}
-        rel="noreferrer"
+        rel='noreferrer'
       >
-        <img ref={imgInRef} src={props.img} alt="Project" />
+        <img ref={imgInRef} src={img} alt='project' />
       </NavLink>
 
-      <div className="portfolio-project__content">
+      <div className='portfolio-project__content'>
         <h2 ref={titleRef}>{props.title}</h2>
         <p ref={desRef}>{props.description}</p>{' '}
       </div>

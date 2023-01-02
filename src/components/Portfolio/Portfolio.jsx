@@ -1,54 +1,36 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import Heading from '../UI/Heading';
-import Marquee from './Marquee';
 import './Portfolio.scss';
-import PortfolioProject from './PortfolioProject';
-
-import personalBudget from '../../assets/personal_budget.png';
-import personalBudget2 from '../../assets/vets.png';
-import budgetApp from '../../assets/Sunnyside-agency.png';
-import budgetApp2 from '../../assets/instagramHD.png';
-
-const projects = [
-  {
-    title: 'Sunnyside Agency',
-    img: budgetApp,
-    description: 'Front end',
-    link: 'https://tender-northcutt-00eb76.netlify.app/',
-  },
-  {
-    title: 'Vet clinic database',
-    img: personalBudget2,
-    description: 'Back end',
-    link: 'https://github.com/Rustamxon7/Vet-clinic-database',
-  },
-  {
-    title: 'Personal budget planner',
-    img: personalBudget,
-    description: 'Full Stack',
-    link: 'https://personal-budget-ui.netlify.app/',
-  },
-  {
-    title: 'Instagram clone',
-    img: budgetApp2,
-    description: 'Full Stack',
-    link: 'https://github.com/Rustamxon7/Instagram-Clone-Rails',
-  },
-];
+const PortfolioProject = React.lazy(() => import('./PortfolioProject'));
 
 const Portfolio = () => {
+  const [projects, setProjects] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    axios
+      .get(`https://projects-api.fly.dev/api/v1/projects`)
+      .then((res) => {
+        setProjects(res.data);
+        setIsLoading(false);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+
   return (
-    <section className="portfolio" id="projects">
+    <section className='portfolio' id='projects'>
       <Heading>Projects</Heading>
-      <div className="portfolio-projects">
+      <div className='portfolio-projects'>
         {projects.map((project, index) => {
           return (
             <PortfolioProject
               key={index}
-              id={index}
-              img={project.img}
+              id={project.id}
+              img={project.thumb.url}
               title={project.title}
-              description={project.description}
               link={project.link}
+              thumbImg={project.thumb.thumb.url}
             />
           );
         })}
