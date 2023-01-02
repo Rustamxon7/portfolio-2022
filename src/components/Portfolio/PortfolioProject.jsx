@@ -123,6 +123,7 @@ const PortfolioProject = (props) => {
         className='portfolio-project__img'
         ref={imgRef}
         rel='noreferrer'
+        target='_blank'
       >
         <img ref={imgInRef} src={img} alt='project' />
       </NavLink>

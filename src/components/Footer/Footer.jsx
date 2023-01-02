@@ -18,13 +18,13 @@ const Footer = () => {
         rights reserved.
       </p>
       <div className="footer-icons">
-        <a href="https://github.com/Rustamxon7">
+        <a href="https://github.com/Rustamxon7" target="_blank" rel="noreferrer">
           <IoLogoGithub className="footer-icon" />
         </a>
-        <a href="www.linkedin.com/in/rustam-tolipov">
+        <a href="www.linkedin.com/in/rustam-tolipov" target="_blank" rel="noreferrer">
           <IoLogoLinkedin className="footer-icon" />
         </a>
-        <a href="https://join.skype.com/invite/EocMg9sn1jjC">
+        <a href="https://join.skype.com/invite/EocMg9sn1jjC" target="_blank" rel="noreferrer">
           <IoLogoSkype className="footer-icon" />
         </a>
       </div>
