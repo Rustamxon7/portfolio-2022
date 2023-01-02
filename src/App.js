@@ -4,16 +4,16 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import './App.scss';
 import './Queries.scss';
-import Hero from './components/Hero/Hero';
-import Cursor from './components/Cursor/Cursor';
-import Container from './components/UI/Container';
-import About from './components/About/About';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import Nav from './components/Nav/Nav';
-import Instagram from './components/Pages/Instagram';
 
 const Portfolio = React.lazy(() => import('./components/Portfolio/Portfolio'));
+const Hero = React.lazy(() => import('./components/Hero/Hero'));
+const About = React.lazy(() => import('./components/About/About'));
+const Contact = React.lazy(() => import('./components/Contact/Contact'));
+const Footer = React.lazy(() => import('./components/Footer/Footer'));
+const Nav = React.lazy(() => import('./components/Nav/Nav'));
+const Project = React.lazy(() => import('./components/Pages/Project'));
+const Cursor = React.lazy(() => import('./components/Cursor/Cursor'));
+const Container = React.lazy(() => import('./components/UI/Container'));
 
 function App() {
   useEffect(() => {
@@ -93,11 +93,11 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className='App'>
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            path='/'
             element={
               <>
                 <Nav />
@@ -119,13 +119,12 @@ function App() {
 
           <Route
             exact
-            path="/project/:id"
+            path='/project/:id'
             element={
               <>
                 <Nav />
-                {/* <Hero /> */}
                 <Container>
-                  <Instagram />
+                  <Project />
                 </Container>
                 <Footer />
                 <Cursor />
@@ -136,10 +135,10 @@ function App() {
       </BrowserRouter>
 
       {/* animation overlay */}
-      <div className="overlay first"></div>
-      <div className="overlay second"></div>
-      <div className="overlay third"></div>
-      <div className="overlay fourth"></div>
+      <div className='overlay first'></div>
+      <div className='overlay second'></div>
+      <div className='overlay third'></div>
+      <div className='overlay fourth'></div>
     </div>
   );
 }
