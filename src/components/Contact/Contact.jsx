@@ -14,8 +14,6 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-text">
           <P>
-            {/* Looking to start a new project or just want to say hi? Send me an
-            email and I'll do my best to reply within 24 hrs! */}
             Looking for a creative and passionate candidate to join your team?
             Send me an email and I'll do my best to reply within 24 hrs!
           </P>

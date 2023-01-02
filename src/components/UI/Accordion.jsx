@@ -27,7 +27,6 @@ const Accordion = (props) => {
         className='accordion-header'
         onClick={() => setActive(!active)}
       >
-        {/* <span className='accordion-num'>_{props.id}</span> */}
         <span className='accordion-title'>{props.title}</span>
         <div className='accordion-icon'>
           <img src={arrow} alt='' />
