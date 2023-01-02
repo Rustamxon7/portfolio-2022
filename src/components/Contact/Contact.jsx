@@ -27,7 +27,10 @@ const Contact = () => {
             >
               rustamxontolipov788@gmail.com
             </a>
-            , and I'll respond within 24 hours. I'm excited to work with a
+            ,
+            <br />
+            <br />
+            and I'll respond within 24 hours. I'm excited to work with a
             creative and enthusiastic team!
           </P>
         </div>
