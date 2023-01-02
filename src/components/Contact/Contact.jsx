@@ -61,7 +61,7 @@ const Contact = () => {
                 name='message'
                 placeholder='How can I help you?'
               ></textarea>
-              {state.succeeded && <p>Thanks for your message!</p>}
+              {state.succeeded && <p className='thank-you'>Thanks for your message!</p>}
             </div>
 
             <button

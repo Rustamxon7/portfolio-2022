@@ -14,7 +14,8 @@
   flex-direction: column;
   gap: 2.4rem;
 
-  label {
+  label,
+  .thank-you {
     display: block;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -62,4 +63,3 @@
     transition: 0.3s;
   }
 }
-
