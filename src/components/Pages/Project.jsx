@@ -68,10 +68,9 @@ const Project = () => {
 
       <div className='pg-build-with'>
         <ul>
-          <li>Ruby on Rails</li>
-          <li>PostgreSQL</li>
-          <li>Cloudinary</li>
-          <li>HTML&CSS</li>
+          {project.techs.map((tech) => {
+            return <li key={tech.id}>{tech.name}</li>;
+          })}
         </ul>
       </div>
     </div>
